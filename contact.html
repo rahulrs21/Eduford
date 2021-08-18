@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University Website Design</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+  <section class="sub-header">
+    <nav>
+      <a href="index.html"><img src="img/logo.png" alt=""></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fas fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="course.html">COURSE</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+          <li><a href="contact.html"><b>CONTACT</b></a></li>
+        </ul>
+      </div>
+      <i class="fas fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <h1>Contact Us</h1>
+  </section>
+
+  <!-- Contact us -->
+  <section class="location">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3611.258736616028!2d55.406910313766105!3d25.160739983913125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6134433bc97f%3A0x57525927d0f431e9!2sProPixel%20-%20Photography%20-%20Design%20-%20Copy%20%26%20Print%20Center!5e0!3m2!1sen!2sae!4v1629051652187!5m2!1sen!2sae"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </section>
+
+  <section class="contact-us">
+    <div class="row">
+      <div class="contact-col">
+        <div>
+          <i class="fas fa-home"></i>
+          <span>
+            <h5>XYZ Road, ABC Building<h5>
+            <p>Bangalore, Karnataka, IN</p>
+          </span>
+        </div>
+        <div>
+          <i class="fas fa-phone-alt"></i>
+          <span>
+            <h5>+1 0123456789</h5>
+            <p>Monday to Saturday, 10AM to 6PM</p>
+          </span>
+        </div>
+        <div>
+          <i class="far fa-envelope"></i>
+          <span>
+            <h5>abc@gmail.com</h5>
+            <p>Email Us Your Query</p>
+          </span>
+        </div>
+      </div>
+      <div class="contact-col">
+        <form action="form-handler.php" method="post">
+          <input type="text" name="name" placeholder="Enter your name" required>
+          <input type="email" name="email" placeholder="Enter email address" required>
+          <input type="text" name="subject" placeholder="Enter your subject" required>
+          <textarea rows="8" name="message" placeholder="Message" required></textarea>
+          <button type="submit" class="hero-btn red-btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<br>when an unknown printer took a galley of type and scrambled it</p>
+    <div class="icons">
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-linkedin"></i>
+    </div>
+    <p>Made with <i class="fas fa-heart"></i> By Rahul</p>
+  </section>
+
+  <script type="text/javascript">
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+      navLinks.style.right = "-200px";
+    }
+  </script>
+</body>
+
+</html>
